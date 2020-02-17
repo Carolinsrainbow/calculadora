@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Calculadora con JavaScript - {desafio} latam_</title>
+		<link type="text/css" href="estilos.css" rel="stylesheet">
+	</head><!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>JS Desafio1: Calculadora</title>
+		<link href="style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0013c2e76c.js" crossorigin="anonymous"></script>
+	</head>
+  <body>
+
+<table>
+  <div>
+    <input id="pantalla" class="pantalla" type="text" />
+  </div>
+
+<section class="part1">
+      <button onclick="agregarCaracter(7)" class="numero">7</button>
+      <button onclick="agregarCaracter(8)" class="numero">8</button>
+      <button onclick="agregarCaracter(9)" class="numero">9</button>
+      <button onclick="fijarOperacion('multiplicación')" class="operacion"><i class="fas fa-times"></i></button>
+	</section>
+
+<section class="part2">
+    <button onclick="agregarCaracter(4)" class="numero">4</button>
+    <button onclick="agregarCaracter(5)" class="numero">5</button>
+    <button onclick="agregarCaracter(6)" class="numero">6</button>
+    <button onclick="fijarOperacion('división')" class="operacion"><i class="fas fa-divide"></i></button>
+		</section>
+
+	<section class="part3">
+      <button onclick="agregarCaracter(1)" class="numero">1</button>
+      <button onclick="agregarCaracter(2)" class="numero">2</button>
+      <button onclick="agregarCaracter(3)" class="numero">3</button>
+			<button onclick="fijarOperacion('resta')" class="operacion"><i class="fas fa-minus"></i></button>
+				</section>
+
+	<section class="part4">
+      <button onclick="agregarCaracter(0)" class="numero">0</button>
+			<button onclick="borrarVisor()"><i class="fab fa-cuttlefish"></i></button>
+			<button onclick="calcular()"><i class="fas fa-equals"></i></button>
+      <button onclick="fijarOperacion('suma')" class="operacion"><i class="fas fa-plus"></i></button>
+		</section>
+
+</table>
+
+  <script src="main.js"></script>
+</body>
+</html>
